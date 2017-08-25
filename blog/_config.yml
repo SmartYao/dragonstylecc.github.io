@@ -80,5 +80,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/dragonstylecc/dragonstylecc.github.io.git
+  repo:
+        coding: https://git.coding.net/dragonstyle/dragonstyle.git
+        github: https://github.com/dragonstylecc/dragonstylecc.github.io.git
   branch: master
