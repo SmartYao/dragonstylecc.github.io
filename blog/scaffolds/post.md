@@ -6,4 +6,6 @@ top:
 comments:
 categories:
 tags:
+showcopyright: true
+showdonate: true
 ---

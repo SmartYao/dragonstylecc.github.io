@@ -1,14 +1,25 @@
 ---
-title: 关于
+title:
 date: 2017-08-17 16:43:59
 type: "about"
-comments:
+comments: false
 ---
-
 ![](http://ov11eqxw3.bkt.clouddn.com/aboutme.jpg/none.jpg)
+
 # 关于本站
-芸芸众生我更愿意看到不一样的烟火
+&nbsp;
+**工具资源：** 一些便捷、高效、有趣、有用的各平台工具资源
 
+**影音：** 那些我看过的影视作品，听过的美妙音乐
+
+**阅读：** 在各个地方读到的感兴趣的文字
+
+**随笔：** 随便写点，所感，所悟
+
+**创想：** 迷之脑洞系列
+***
 # 关于我
+&nbsp;
+芸芸众生我更愿意看到不一样的烟火,是你吗？
 
-E-mail: dragonstyle@aliyun.com
+E-mail:<a href="mailto:dragonstyle@aliyun.com">dragonstyle@aliyun.com</a>
