@@ -20,7 +20,7 @@
     </span>
   {% endif %}
 </div>
-
+<!--
 {% if theme.copyright %}
   <div class="powered-by">{#
   #}{{ __('footer.powered', '<a class="theme-link" href="https://hexo.io">Hexo</a>') }}{#
@@ -35,3 +35,5 @@
   #}</a> v{{ theme.version }}{#
 #}</div>
 {% endif %}
+-->
+<div>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></div>

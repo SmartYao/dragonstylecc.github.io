@@ -5,10 +5,9 @@ type: "about"
 comments: false
 ---
 ![](http://ov11eqxw3.bkt.clouddn.com/aboutme.jpg/none.jpg)
-
 # 关于本站
 &nbsp;
-**工具资源：** 一些便捷、高效、有趣、有用的各平台工具资源
+**工具资源：** 一些便捷、高效、有趣、有用的各种工具资源
 
 **影音：** 那些我看过的影视作品，听过的美妙音乐
 
@@ -20,6 +19,12 @@ comments: false
 ***
 # 关于我
 &nbsp;
-芸芸众生我更愿意看到不一样的烟火,是你吗？
+坐标重庆，理工男一枚
+大学本来学的是微电子学，毕业后却去做了三年笔记本测试，然后囿于工厂的封闭、落后和单调，然后自学Android开发，现从事Android开发工作。
+&nbsp;
+年少时接触黄老思想，道易“邪术”，所以崇尚自然，简单与无为的理念;
+平时喜欢看看电影、听听歌、玩玩游戏
+
+芸芸众生我更愿意看到不一样的烟火，是你吗？
 
 E-mail:<a href="mailto:dragonstyle@aliyun.com">dragonstyle@aliyun.com</a>
