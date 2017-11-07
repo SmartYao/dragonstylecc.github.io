@@ -25,7 +25,7 @@ rss:
 #since: 2017
 
 # icon between year and author @Footer
-authoricon: heart
+authoricon: podcast
 
 # Footer `powered-by` and `theme-info` copyright
 copyright: true
@@ -41,11 +41,11 @@ copyright: true
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page, added in main hexo config.
 # subtitle: Subtitle
-index_with_subtitle: false
+index_with_subtitle: true
 
 
 # ---------------------------------------------------------------
@@ -64,7 +64,7 @@ menu:
   tags: /tags/ || tags
   tools: /categories/工具资源/ || briefcase
   media: /categories/影音/ || music
-  
+
   read: /categories/阅读/ || book
   write: /categories/随笔/ || pencil-square
   idea: /categories/创想/ || key
@@ -139,11 +139,12 @@ social_icons:
   transition: false
 
 # Blog rolls
-#links_title: Links
+links_title: 友情链接
+links_icon:  handshake-o
 #links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://example.com/
+links_layout: inline
+links:
+  肖晗个人博客: http://www.xiaohanwz.com/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -189,7 +190,7 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view
   onmobile: false
@@ -203,7 +204,7 @@ sidebar:
 scroll_to_more: true
 
 # Automatically saving scroll position on each post/page in cookies.
-save_scroll: false
+save_scroll: true
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
@@ -276,7 +277,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night bright
+highlight_theme: night eighties
 
 
 # ---------------------------------------------------------------
@@ -405,7 +406,7 @@ livere_uid: MTAyMC8yODQwNy80OTc4
 # Warning: JiaThis does not support https.
 jiathis: true
   ##uid: Get this uid from http://www.jiathis.com/
-#add_this_id:
+add_this_id: 2142192
 
 # Share
 #duoshuo_share: true
@@ -633,7 +634,7 @@ pace: true
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: true
+canvas_nest: false
 
 # three_waves
 three_waves: false

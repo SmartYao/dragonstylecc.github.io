@@ -5,7 +5,7 @@ type:
 top:
 comments:
 categories: [Android]
-tags: [Android, Android studio, 设置]
+tags: [Android, Android studio]
 showcopyright: true
 showdonate: true
 ---
@@ -83,7 +83,7 @@ Android 开发中，我们通常会使用驼峰命名法对变量进行命名，
 
 ## 配置Log颜色
 Android Studio自带主题Log显示颜色比较单一，可以自己配色。如果是第三方主题，先取消勾选 Use inherited attributes，然后就可以为各种级别设置颜色。推荐颜色设置：
-```
+```java
 Assert:     #AA66CC
 Debug:      #33B5E5
 Error:      #FF4444
