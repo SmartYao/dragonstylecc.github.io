@@ -31,4 +31,4 @@ comments: false
 
 如果我拥有什么巨大财富，我希望是我的脑袋。芸芸众生我更愿意看到不一样的烟火，是你吗？
 
-E-mail:<a href="mailto:dragonstyle@aliyun.com">dragonstyle@aliyun.com</a>
+E-mail:<a href="mailto:dragonstyle@aliyun.com">dragonstyle@aliyun.com</a> 

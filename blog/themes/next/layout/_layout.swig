@@ -40,7 +40,6 @@
         {% endif %}
       </div>
     </main>
-
     <footer id="footer" class="footer">
       <div class="footer-inner">
         {% include '_partials/footer.swig' %}

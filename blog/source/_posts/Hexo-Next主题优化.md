@@ -1164,6 +1164,80 @@ header{ width: 90%; }
 .content-wrap { width: calc(100% - 260px); }
 ```
 
+### 修改Logo字体
+
+在 `themes/next/source/css/_custom/custom.styl`  中添加如下代码：
+```
+@font-face {
+    font-family: Zitiming;
+    src: url('/fonts/Zitiming.ttf');
+}
+.site-title {
+    font-size: 40px !important;
+	font-family: 'Zitiming' !important;
+}
+```
+其中字体文件在 `themes/next/source/fonts` 目录下，里面有个 `.gitkeep` 的隐藏文件，打开写入你要保留的字体文件，比如我的是就是写入 `Zitiming.ttf` ，具体字库自己从网上下载即可。
+
+### 添加背景图
+
+在 themes/next/source/css/_custom/custom.styl 中添加如下代码：
+```
+body{
+    background:url(/images/bg.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+}
+```
+
+### 各版块透明度修改
+
+#### 内容板块透明
+
+博客根目录 `themes\next\source\css\_schemes\Pisces\_layout.styl` 文件 ` .content-wrap` 标签下 `background: white`修改为：
+```
+background: rgba(255,255,255,0.7); //0.7是透明度
+```
+
+#### 菜单栏背景
+
+博客根目录 `themes\next\source\css\_schemes\Pisces\_layout.styl` 文件 `.header-inner` 标签下 `background: white`修改为：
+```
+background: rgba(255,255,255,0.7); //0.7是透明度
+```
+
+#### 站点概况背景
+
+博客根目录 `themes\next\source\css\_schemes\Pisces\_sidebar.styl` 文件 `.sidebar-inner` 标签下 `background: white`修改为：
+```
+background: rgba(255,255,255,0.7); //0.7是透明度
+```
+然后修改博客根目录 `themes\next\source\css\_schemes\Pisces\_layout.styl` 文件 ` .sidebar` 标签下 `background: $body-bg-color`修改为：
+```
+background: rgba(255,255,255,0.7); //0.7是透明度
+```
+
+#### 按钮背景
+
+博客根目录 `themes\next\source\css\_common\components\post\post-button.styl` 同上修改对应位置为 `background: transparent;`
+
+### 添加网易云音乐
+
+在网易云音乐（网页版）中搜索我们想要插入的音乐，然后点击生成外链播放器
+![](http://ov11eqxw3.bkt.clouddn.com/20171109wangyiyun.jpg/water.jpg)
+然后根据你得设置生成相应的html代码，将获得的html代码插入到你想要插入的位置。
+
+我放在了侧边栏，在 `themes/next/layout/_custom/sidebar.swig` 文件中增加生成的HTML代码：
+```
+<div id="music163player">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=38358214&auto=0&height=66">
+    </iframe>
+</div>
+```
+可以根据自己实际情况修改宽高等样式。
+
 参考自：
 
 http://www.jianshu.com/p/3ff20be857

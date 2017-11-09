@@ -233,4 +233,6 @@ $ git remote show origin
 $ git remote rename old new
 ```
 
-更多详细命令请参考 http://www.yiibai.com/git/
+更多详细命令请参考 
+https://git-scm.com/book/zh/v2
+http://www.yiibai.com/git/

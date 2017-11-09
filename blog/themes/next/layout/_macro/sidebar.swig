@@ -134,10 +134,9 @@
           </div>
         {% endif %}
 
-        {% include '../_custom/sidebar.swig' %}
-
+      {% include '../_custom/sidebar.swig' %}
       </section>
-
+      
       {% if display_toc and toc(page.content).length > 1 %}
       <!--noindex-->
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
