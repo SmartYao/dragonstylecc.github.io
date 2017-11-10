@@ -10,8 +10,19 @@ override: false
 # Site Information Settings
 # ---------------------------------------------------------------
 
-# Put your favicon.ico into `hexo-site/source/` directory.
-favicon: favicon.ico
+# To get or check favicons visit: https://realfavicongenerator.net
+# Put your favicons into `hexo-site/source/` (recommend) or `hexo-site/themes/next/source/images/` directory.
+
+# For example, you put your favicons into `hexo-site/source/images` directory.
+# Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
+favicon:
+  small: /images/favicon-16x16.ico
+  medium: /images/favicon-32x32-next.ico
+  #apple_touch_icon: /images/apple-touch-icon-next.png
+  #safari_pinned_tab: /images/logo.svg
+  #android_manifest: /images/manifest.json
+  #ms_browserconfig: /images/browserconfig.xml
+
 
 # Set default keywords (Use a comma to separate)
 keywords: "重庆Geek, 技术, 分享, 交流, 互联网, Dragonstyle, Android, Share, technology, communication, Hexo, NexT"
@@ -21,15 +32,28 @@ keywords: "重庆Geek, 技术, 分享, 交流, 互联网, Dragonstyle, Android, 
 # Set rss to specific value if you have burned your feed already.
 rss:
 
-# Specify the date when the site was setup
-#since: 2017
+footer:
+  # Specify the date when the site was setup.
+  # If not defined, current year will be used.
+  #since: 2017
 
-# icon between year and author @Footer
-authoricon: podcast
+  # Icon between year and copyright info.
+  icon: podcast
 
-# Footer `powered-by` and `theme-info` copyright
-copyright: true
+  # If not defined, will be used `author` from Hexo main config.
+  copyright:
+  # -------------------------------------------------------------
+  # Hexo link (Powered by Hexo).
+  powered: true
 
+  theme:
+    # Theme & scheme info link (Theme - NexT.scheme).
+    enable: true
+    # Version info of NexT after scheme info (vX.X.X).
+    version: true
+  # -------------------------------------------------------------
+  # Any custom text can be defined here.
+  #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -75,10 +99,6 @@ menu:
   #commonweal: /404/ || heartbeat
 
 # Enable/Disable menu icons.
-# Icon Mapping:
-#   Map a menu item to a specific FontAwesome icon name.
-#   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.
-#   When an question mask icon presenting up means that the item has no mapping icon.
 menu_icons:
   enable: true
 
@@ -156,7 +176,7 @@ toc:
   enable: true
 
   # Automatically add list number to toc.
-  number: true
+  number: false
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
@@ -168,11 +188,11 @@ toc:
 #creative_commons:
 
 sidebar:
-  # Sidebar Position, available value: left | right
+  # Sidebar Position, available value: left | right (only for Pisces | Gemini).
   position: left
   #position: right
 
-  # Sidebar Display, available value:
+  # Sidebar Display, available value (only for Muse | Mist):
   #  - post    expand on posts automatically. Default.
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
@@ -182,17 +202,16 @@ sidebar:
   #display: hide
   #display: remove
 
-  # Sidebar offset from top menubar in pixels.
+  # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
-  offset_float: 12
 
-  # Back to top in sidebar
+  # Back to top in sidebar (only for Pisces | Gemini).
   b2t: false
 
   # Scroll percent label in b2t button
   scrollpercent: true
 
-  # Enable sidebar on narrow view
+  # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
 
 
@@ -376,14 +395,17 @@ changyan:
 
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
-# more info please open https://github.com/xCss/Valine
+# more info please open https://valine.js.org
 valine:
   enable: false
   appid:  # your leancloud application appid
   appkey:  # your leancloud application appkey
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
-  placeholder: Comment input placeholder
+  placeholder: Just go go # comment box placeholder
+  avatar: mm # gravatar style
+  guest_info: nick,mail,link # custom comment header
+  pageSize: 10 # pagination size
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
@@ -392,6 +414,22 @@ valine:
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
 livere_uid: MTAyMC8yODQwNy80OTc4
+# Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/
+# You can get your Github ID from https://api.github.com/users/<Github username>
+gitment:
+  enable: false
+  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
+  count: true # Show comments count in post meta area
+  lazy: false # Comments lazy loading with a button
+  cleanly: false # Hide 'Powered by ...' on footer, and more
+  language: # Force language, or auto switch by theme
+  github_user: # MUST HAVE, Your Github ID
+  github_repo: # MUST HAVE, The repo you use to store Gitment comments
+  client_id: # MUST HAVE, Github client id for the Gitment
+  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
+  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
 # Baidu Share
 # Available value:
@@ -410,6 +448,34 @@ add_this_id: 2142192
 
 # Share
 #duoshuo_share: true
+
+# NeedMoreShare2
+# This plugin is a pure javascript sharing lib which is useful in China.
+# See: https://github.com/revir/need-more-share2
+# Also see: https://github.com/DzmVasileusky/needShareButton
+# iconStyle: default | box
+# boxForm: horizontal | vertical
+# position: top / middle / bottom + Left / Center / Right
+# networks: Weibo,Wechat,Douban,QQZone,Twitter,Linkedin,Mailto,Reddit,
+#           Delicious,StumbleUpon,Pinterest,Facebook,GooglePlus,Slashdot,
+#           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
+#           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
+needmoreshare2:
+  enable: false
+  postbottom:
+    enable: false
+    options:
+      iconStyle: box
+      boxForm: horizontal
+      position: bottomCenter
+      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
+  float:
+    enable: false
+    options:
+      iconStyle: box
+      boxForm: horizontal
+      position: middleRight
+      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -442,12 +508,12 @@ duoshuo_info:
   user_id: 0
   #admin_nickname: Author
 
-
-
+# Post widgets & FB/VK comments settings.
+# ---------------------------------------------------------------
 # Facebook SDK Support.
 # https://github.com/iissnan/hexo-theme-next/pull/410
 facebook_sdk:
-  enable: false
+  enable:       false
   app_id:       #<app_id>
   fb_admin:     #<user_id>
   like_button:  #true
@@ -457,15 +523,15 @@ facebook_sdk:
 # This plugin depends on Facebook SDK.
 # If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
 facebook_comments_plugin:
-  enable: false
-  num_of_posts: 10  # min posts num is 1
-  width: 100%       # default width is 550px
-  scheme: light     # default scheme is light (light or dark)
+  enable:       false
+  num_of_posts: 10    # min posts num is 1
+  width:        100%  # default width is 550px
+  scheme:       light # default scheme is light (light or dark)
 
 # VKontakte API Support.
 # To get your AppID visit https://vk.com/editapp?act=create
 vkontakte_api:
-  enable: false
+  enable:       false
   app_id:       #<app_id>
   like:         true
   comments:     true
@@ -477,7 +543,7 @@ rating:
   enable: false
   id:     #<app_id>
   color:  fc6423
-
+# ---------------------------------------------------------------
 
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
@@ -485,6 +551,15 @@ leancloud_visitors:
   enable: true
   app_id: 9DBdjgPvO43bz1cm2SFtwkmb-gzGzoHsz
   app_key: 61xlhYVTGCh7L7KkeYpRcz69
+# Another tool to show number of visitors to each article.
+# visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
+# visit https://firebase.google.com/docs/firestore/ to get more information about firestore
+firestore:
+  enable: false
+  collection: articles #required, a string collection name to access firestore database
+  apiKey: #required
+  projectId: #required
+  bluebird: false #enable this if you want to include bluebird 3.5.1(core version) Promise polyfill
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
@@ -593,7 +668,7 @@ tabs:
 #! UNLESS YOU KNOW WHAT YOU ARE DOING
 #! ---------------------------------------------------------------
 
-# Motion
+# Use velocity to animate everything.
 motion:
   enable: true
   async: true
@@ -609,6 +684,8 @@ motion:
     post_header: slideDownIn
     post_body: slideDownIn
     coll_header: slideLeftIn
+    # Only for Pisces | Gemini.
+    sidebar: slideUpIn
 
 # Fancybox
 fancybox: true
@@ -647,7 +724,14 @@ canvas_sphere: false
 
 # Only fit scheme Pisces
 # Canvas-ribbon
-canvas_ribbon: false
+# size: The width of the ribbon.
+# alpha: The transparency of the ribbon.
+# zIndex: The display level of the ribbon.
+canvas_ribbon:
+  enable: false
+  size: 300
+  alpha: 0.6
+  zIndex: -1
 
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
@@ -731,6 +815,10 @@ vendors:
   # https://github.com/ethantw/Han
   han:
 
+  # needMoreShare2
+  # https://github.com/revir/need-more-share2
+  needMoreShare2:
+
 #压缩博文
 
 neat_enable: true
@@ -759,4 +847,4 @@ js: js
 images: images
 
 # Theme version
-version: 5.1.2
+version: 5.1.3
