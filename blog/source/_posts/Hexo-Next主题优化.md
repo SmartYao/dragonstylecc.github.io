@@ -12,10 +12,10 @@ tags: [Hexo, Next主题, Hexo+Next]
 
 
 
-### 设置主题风格
+### 1. 置主题风格
 
 打开 `themes/next/_config.yml` 文件，搜索  `scheme` 关键字，将你需用启用的 `scheme` 前面注释 # 去除即可。
-```java
+```css
 # ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
@@ -27,14 +27,14 @@ scheme: Pisces # 双栏 Scheme，小家碧玉似的清新
 #scheme: Gemini # 类似 Pisces
 ```
 <!--more-->
-### 设置菜单项的显示文本和图标
+### 2. 设置菜单项的显示文本和图标
 
 NexT 使用的是 [Font Awesome](http://fontawesome.dashgame.com/)  提供的图标， [Font Awesome](http://fontawesome.dashgame.com/) 提供了 600+ 的图标，可以满足绝大的多数的场景，同时无须担心在 Retina 屏幕下图标模糊的问题。
 
-#### 设置菜单项的显示中文文本：
+#### 2.1 设置菜单项的显示中文文本：
 
 打开 `themes/next/languages/zh-Hans.yml` 文件,搜索 `menu` 关键字，修改对应中文或者新增。
-```
+```css
 menu:
   home: 首页
   archives: 归档
@@ -49,10 +49,10 @@ menu:
   catalogue: 目录
  ```
 
-#### 设定菜单项的文件目录和对应图标（新版两项合并）
+#### 2.2 设定菜单项的文件目录和对应图标（新版两项合并）
 
 打开 `themes/next/_config.yml` 文件，搜索    `menu_icons` 关键字，修改对应图标名称或者新增对应 `menu` 的图标。
-```java
+```css
 # ---------------------------------------------------------------
 # Menu Settings
 # ---------------------------------------------------------------
@@ -83,16 +83,16 @@ menu_icons:
  ```
  除了 `home`， `archives` , `/`后面都需要手动创建这个页面
 
-#### 创建菜单项对应文件目录,以分类为例
+#### 2.3 创建菜单项对应文件目录,以分类为例
 
 在终端窗口下，定位到 `Hexo` 站点目录下。使用 `hexo new page` 新建一个页面，命名为 categories ：
-```
+```sh
 $ cd your-hexo-site
 $ hexo new page categories
 ```
 
 编辑刚新建的页面,设置分类
-```
+```css
 ---
 title: 分类
 date: 2014-12-22 12:39:04
@@ -100,12 +100,12 @@ categories: Testing #分类名
 type: "categories"
 ---
 ```
-### 头像设置
+### 3. 头像设置
 
-#### 添加头像
+#### 3.1 添加头像
 
 打开 `themes/next/_config.yml` 文件，搜索  `Sidebar Avatar` 关键字，去掉 `avatar` 前面的`#`：
-```
+```JavaScript
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
@@ -115,10 +115,10 @@ avatar: http://example.com/avatar.png
 ```
 avatar: /images/avatar.gif
 ```
-#### 设置头像边框为圆形框
+#### 3.2 设置头像边框为圆形框
 
 打开位于 `themes/next/source/css/_common/components/sidebar/sidebar-author.syl` 文件,修改如下:
-```
+```css
 .site-author-image {
   display: block;
   margin: 0 auto;
@@ -133,9 +133,9 @@ avatar: /images/avatar.gif
 }
 ```
 
-#### 特效：鼠标放置头像上旋转
+#### 3.3 特效：鼠标放置头像上旋转
 
-```
+```css
 .site-author-image {
   display: block;
   margin: 0 auto;
@@ -159,15 +159,15 @@ avatar: /images/avatar.gif
 }
 ```
 
-### 浏览页面的时候显示当前浏览进度
+### 4. 浏览页面的时候显示当前浏览进度
 
 打开 `themes/next/_config.yml` ,搜索关键字 `scrollpercent` ,把 `false` 改为 `true`。
-```
+```css
   # Scroll percent label in b2t button
   scrollpercent: true
 ```
 如果想把 `top`按钮放在侧边栏,打开 `themes/next/_config.yml` ,搜索关键字 `b2t` ,把 `false` 改为 `true`。
-```
+```css
  # Back to top in sidebar
   b2t: true
 
@@ -175,13 +175,13 @@ avatar: /images/avatar.gif
   scrollpercent: true
 ```
 
-### 侧边栏设置
+### 5. 侧边栏设置
 
-#### 设置侧边栏社交链接
+#### 5.1 设置侧边栏社交链接
 
 打开 `themes/next/_config.yml` 文件,搜索关键字 `social` ,然后添加社交站点名称与地址即可。
 
-```
+```css
 # ---------------------------------------------------------------
 # Sidebar Settings
 # ---------------------------------------------------------------
@@ -199,18 +199,18 @@ social:
   # 等等
 ```
 
-#### 设置侧边栏社交图标
+#### 5.2 设置侧边栏社交图标
 
 打开 `themes/next/_config.yml` 文件,搜索关键字 `social_icons` ，添加社交站点名称（注意大小写）图标，[Font Awesome](http://fontawesome.dashgame.com)图标地。
 
-#### RSS
+#### 5.3 RSS
 
 在你 `Hexo` 站点目录下：
-```
+```sh
 $ npm install hexo-generator-feed --save
 ```
 打开 `Hexo` 站点下的 `_config.yml` ,添加如下配置：
-```
+```JavaScript
 # feed
 # Dependencies: https://github.com/hexojs/hexo-generator-feed
 feed:
@@ -221,10 +221,10 @@ feed:
   content:
  ```
 
-#### 友情链接
+#### 5.4 友情链接
 
 打开 `themes/next/_config.yml` 文件,搜索关键字 `Blog rolls`：
-```
+```JavaScript
 # Blog rolls
 links_title: 友情链接 #标题
 links_layout: block #布局，一行一个连接
@@ -234,11 +234,11 @@ links: #连接
   google: http://example.com/
 ```
 
-### 主页文章添加边框阴影效果
+### 6. 主页文章添加边框阴影效果
 
 
 打开 `themes/next/source/css/_custom/custom.styl` ,向里面加代码:
-```
+```JavaScript
 // 主页文章添加阴影效果
 .post {
    margin-top: 0px;
@@ -249,10 +249,10 @@ links: #连接
 }
 ```
 
-### 修改文章间分割线
+### 7. 修改文章间分割线
 
 打开 `themes/next/source/css/_common/components/post/post-eof.styl` ,修改：
-```
+```JavaScript
 .posts-expand {
   .post-eof {
     display: block;
@@ -265,9 +265,9 @@ links: #连接
 }
 ```
 
-### 代码块自定义样式
+### 8. 代码块自定义样式
 
-```
+```JavaScript
 // Custom styles.
 code {
     color: #ff7600;
@@ -285,10 +285,10 @@ code {
 }
 ```
 
-### 开启版权声明
+### 9. 开启版权声明
 
 主题配置文件下,搜索关键字 `post_copyright` , `enable` 改为 `true`：
-```
+```JavaScript
 # Declare license on posts
 post_copyright:
   enable: true
@@ -296,10 +296,10 @@ post_copyright:
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ```
 
-### 自定义文章底部版权声明
+### 10. 自定义文章底部版权声明
 
 效果：
-```
+```JavaScript
 作者：Dragonstyle
 链接：http://www.dragonstyle.win/2017/09/06/Android-Studio个人设置/
 來源：简书
@@ -307,7 +307,7 @@ post_copyright:
 ```
 
 在目录 `themes/next/layout/_macro/` 下添加 `my-copyright.swig` ,内容如下:
-```
+```JavaScript
 {% if page.copyright %}
 <div class="my_post_copyright">
   <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -344,7 +344,7 @@ post_copyright:
 ```
 
 在目录 `themes/next/source/css/_common/components/post/` 下添加 `my-post-copyright.styl`,内容如下:
-```
+```JavaScript
 .my_post_copyright {
   width: 85%;
   max-width: 45em;
@@ -392,7 +392,7 @@ post_copyright:
 }
 ```
 修改 `themes/next/layout/_macro/post.swig` ,在代码如下：
-```
+```JavaScript
 {% if theme.wechat_subscriber.enabled and not is_index %}
       <div>
         {% include 'wechat-subscriber.swig' %}
@@ -400,7 +400,7 @@ post_copyright:
  {% endif %}
 ```
 之前添加增加如下代码：
-```
+```JavaScript
 <div>
       {% if not is_index %}
         {% include 'my-copyright.swig' %}
@@ -408,14 +408,14 @@ post_copyright:
 </div>
 ```
 修改 `themes/next/source/css/_common/components/post/post.styl` 文件，在最后一行增加代码：
-```
+```JavaScript
 @import "my-post-copyright"
 ```
 
 设置新建文章自动开启
 
 `copyright`,即新建文章自动显示自定义的版权声明,设置 `your site/scaffolds/post.md`文件
-```
+```JavaScript
 ---
 title: {{ title }}
 date: {{ date }}
@@ -426,16 +426,16 @@ copyright: true #新增,开启
 ---
 ```
 
-### 在右上角或者左上角实现fork me on github
+### 11. 在右上角或者左上角实现fork me on github
 
 选择样式[GitHub Ribbons](https://github.com/blog/273-github-ribbons),修改图片跳转链接,并复制文本框中的代码,将如下地方代码换为自己Github主页：
 ![](http://ov11eqxw3.bkt.clouddn.com/20171107Github.jpg/water.jpg)
 打开 `themes/next/layout/_layout.swig` 文件，把代码复制到`<div class="headband"></div>`下面。
 
-### 修改文章底部的那个带#号的标签
+### 12. 修改文章底部的那个带#号的标签
 
 打开 `themes/next/layout/_macro/post.swig` 文件,搜索 `rel="tag">#` ,将 `#` 换成 `<i class="fa fa-tag"></i>`
-```
+```JavaScript
 <div class="post-tags">
     {% for tag in post.tags %}
        <a href="{{ url_for(tag.path) }}" rel="tag"><i class="fa fa-tag"></i> {{ tag.name }}</a>
@@ -443,10 +443,10 @@ copyright: true #新增,开启
 </div>
 ```
 
-### 添加顶部加载条
+### 13. 添加顶部加载条
 
 打开 `themes/next/_config.yml` ，搜索关键字 `pace` ,设置为 `true` ,可以更换加载样式：
-```
+```css
 # Progress bar in the top during page loading.
 pace: true
 # Themes list:
@@ -467,14 +467,14 @@ pace: true
 # pace_theme: pace-theme-center-simple
 pace_theme: pace-theme-flash #替换更换样式
 ```
-### 本地搜索
+### 14. 本地搜索
 
 在你站点的根目录下
 ```
 $ npm install hexo-generator-searchdb --save
 ```
 打开 `Hexo` 站点的 `_config.yml`,添加配置
-```
+```JavaScript
 search:
   path: search.xml
   field: post
@@ -482,7 +482,7 @@ search:
   limit: 10000
 ```
 打开 `themes/next/_config.yml` ,搜索关键字 `local_search` ,设置为 `true`：
-```
+```JavaScript
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
@@ -494,7 +494,7 @@ local_search:
   top_n_per_article: 1
 ```
 
-### 修改网页底部
+### 15. 修改网页底部
 
 1. 在图标库中找到你自己喜欢的图标, 修改桃心,打开 `themes/next_config.yml` ,搜索关键字 `authoricon`,替换图标名
 ```
@@ -508,9 +508,9 @@ authoricon: id-card
 # Footer `powered-by` and `theme-info` copyright
 copyright: false
 ```
-### 博文置顶
+### 16. 博文置顶
 ~~打开 `Hexo` 站点下 `node_modules/hexo-generator-index/lib/generator.js` 文件。代码全部替换为：~~(next 5.1以后主题已自带此功能)
-```
+```JavaScript
 'use strict';
 var pagination = require('hexo-pagination');
 module.exports = function(locals){
@@ -541,7 +541,7 @@ module.exports = function(locals){
 };
 ```
 打开文章添加top字段,设置数值，数值越大文章越靠前：
-```
+```JavaScript
 ---
 layout: layout
 title: 标签1
@@ -551,14 +551,14 @@ top: 100
 ---
 ```
 
-###  统计功能，统计功能,显示文章字数统计,阅读时长,总字数
+###  17. 统计功能，统计功能,显示文章字数统计,阅读时长,总字数
 
 在站点的根目录下：
 ```
 $ npm i --save hexo-wordcount
 ```
 打开 `themes/next/_config.yml` ，搜索关键字 `post_wordcount`：
-```
+```JavaScript
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
@@ -572,10 +572,10 @@ post_wordcount:
   separated_meta: true
 ```
 
-### 修改文章内文本连接样式
+### 18. 修改文章内文本连接样式
 
 打开 `themes/next/source/css/_custom/custom.styl`,添加代码：
-```
+```JavaScript
 // 文章内链接文本样式
 .post-body p a{
   color: #0593d3;
@@ -589,10 +589,10 @@ post_wordcount:
 }
 ```
 
-### 每篇文章末尾统一添加“本文结束”标记
+### 19. 每篇文章末尾统一添加“本文结束”标记
 
 在路径 `/themes/next/layout/_macro` 中新建  `passage-end-tag.swig` 文件,并添加以下内容：
-```
+```JavaScript
 <div>
     {% if not is_index %}
         <div style="text-align:center;color: #ccc;font-size:14px;">------ 本文结束------</div>
@@ -600,7 +600,7 @@ post_wordcount:
 </div>
 ```
 打开 `themes/next/layout/_macro/post.swig` 文件,添加：
-```
+```JavaScript
 <div>
     {% if not is_index %}
     {% include 'passage-end-tag.swig' %}
@@ -608,25 +608,25 @@ post_wordcount:
  </div>
 ```
 然后打开主题配置文件 `_config.yml`,在末尾添加：
-```
+```JavaScript
 # 文章末尾添加“本文结束”标记
 passage_end_tag:
 enabled: true
 ```
 
-### 文章顶部显示更新时间
+### 20. 文章顶部显示更新时间
 
 打开主题配置文件 `_config.yml` ,搜索关键字 `updated_at` 设置为 `true` ：
-```
+```JavaScript
 # Post meta display settings
 post_meta:
   item_text: true
   created_at: true
-  updated_at: ture
+  updated_at: true
   categories: true
 ```
 ~~编辑文章,增加关键字`updated`~~（next可以根据文章改变时间自动更改）
-```
+```JavaScript
 ---
 layout: layout
 title: 关于
@@ -634,21 +634,21 @@ date: 2017-08-18 15:41:18
 updated: 2017-09-05 20:18:54 #手动添加更新时间
 ```
 
-### 修改访问URL路径
+### 21. 修改访问URL路径
 
 默认情况下访问URL路径为：`domain/2017/08/18/关于本站`,修改为 `domain/About/关于本站`。
 编辑 `Hexo` 站点下的 `_config.yml` 文件，修改其中的 `permalink` 字段：
-```
+```JavaScript
 permalink: :category/:title/
 ```
 
-### 给代码块添加复制功能
+### 22. 给代码块添加复制功能
 
 - 下载插件[clipboard.js](https://github.com/zenorocha/clipboard.js) 。
 - 打开 `themes/next/source/lib/` ,新建文件夹 `clipboard`。
 - 把下载 `clipboard.js`下的 `src` 文件夹下的文件拖动到 `clipboard`文件夹下。
 - 打开 `themes/next/source/js/src/` ,新建文件 `custom.js` ,代码如下:
-```
+```JavaScript
 //此函数用于创建复制按钮
 function createCopyBtns() {
     var $codeArea = $("figure table");
@@ -753,20 +753,20 @@ $(document).ready(function() {
 });
 ```
 - 打开 `themes/next/layout/_custom/` ,新建文件 `custom.swig` ，代码如下:
-```
+```JavaScript
 <script type="text/javascript" src="/lib/clipboard/clipboard.js"></script>
 <script type="text/javascript" src="/js/src/custom.js"></script>
 ```
 - 修改文件 `themes/next/layout/_layout.swig` ,在标签 `</body>`上面插入代码:
-```
+```JavaScript
 {% include '_custom/custom.swig' %}
 ```
 
-### 新建404界面
+### 23. 新建404界面
 
 在站点根目录下,输入 `hexo new page 404` ,默认在 `Hexo` 站点下`/source/404/index.md`
 打开新建的404界面，在顶部插入一行，写上 `permalink: /404` ，这表示指定该页固定链接为 ` http://"主页"/404.html`。
-```
+```JavaScript
 ---
 title: #404 Not Found：该页无法显示
 date: 2017-09-06 15:37:18
@@ -775,7 +775,7 @@ permalink: /404
 ---
 ```
 如果你不想编辑属于自己的404界面,可以显示腾讯公益404界面,代码如下：
-```
+```html
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -795,7 +795,7 @@ permalink: /404
 </body>
 </html>
 ```
-### 静态资源压缩
+### 24. 静态资源压缩
 
 在站点目录下：
 ```
@@ -810,7 +810,7 @@ npm install gulp-htmlclean --save
 npm install gulp-imagemin --save
 ```
 在 `Hexo` 站点下添加 `gulpfile.js`文件，文件内容如下：
-```
+```JavaScript
 var gulp = require('gulp');
 var minifycss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
@@ -864,14 +864,14 @@ gulp
 hexo d
 ```
 
-### 本地站点推送到GitHub上
+### 25. 本地站点推送到GitHub上
 
 在站点更目录下：
 ```
 $ npm install hexo-deployer-git --save
 ```
 在 `Hexo` 站点的 `_config.yml` 中配置 `deploy`：
-```
+```JavaScript
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -889,12 +889,12 @@ hexo g  # 生成本地 public 静态文件,
 hexo d  # 部署到 Github 上,
 也可以缩写成：hexo g --d 。
 
-### 添加文章书写样式
+### 26. 添加文章书写样式
 
-#### 文字增加背景色块
+#### 26.1 文字增加背景色块
 
 打开 `themes/next/source/css/_custom` 下的 ` custom.styl` 文件,添加属性样式：
-```
+```css
 // 颜色块-黄
 span#inline-yellow {
 display:inline;
@@ -953,17 +953,17 @@ background-color: #9954bb;
 }
 ```
 在你需要编辑的文章地方。放置如下代码：
-```
+```css
 <span id="inline-blue"> 站点配置文件 </span>
 <span id="inline-purple"> 主题配置文件 </span>
 <span id="inline-yellow"> 站点配置文件 </span>
 <span id="inline-green"> 主题配置文件 </span>
 ```
 
-#### 下载样式
+#### 26.2 下载样式
 
 打开 `themes/next/source/css/_custom/custom.styl` 文件,添加属性样式：
-```
+```css
 a#download {
 display: inline-block;
 padding: 0 10px;
@@ -980,15 +980,15 @@ color: #fff;
 }
 ```
 在你需要编辑的文章地方。放置如下代码：
-```
+```css
 <a id="download" href="https://git-scm.com/download/win"><i class="fa fa-download"></i><span> Download Now</span> </a>
 ```
-#### 在文档中增加图标, [Font Awesome](http://fontawesome.dashgame.com/) 提供图标
+#### 26.3 在文档中增加图标, [Font Awesome](http://fontawesome.dashgame.com/) 提供图标
 ```
 <i class="fa fa-pencil"></i>支持Markdown
 ```
 
-### 实现点击出现桃心效果
+### 27. 实现点击出现桃心效果
 
 - 复制[网页](http://7u2ss1.com1.z0.glb.clouddn.com/love.js)代码
 - 新建 `love.js` 文件并且将代码复制进去，然后保存。
@@ -999,7 +999,7 @@ color: #fff;
 <script type="text/javascript" src="/js/src/love.js"></script>
 ```
 
-### 添加热度
+### 28. 添加热度
 
 
 ![](http://ov11eqxw3.bkt.clouddn.com/20171107redu.jpg/water.jpg)
@@ -1009,8 +1009,7 @@ next主题集成leanCloud,根据[next官方文档](http://theme-next.iissnan.com
 
 然后打开 `/themes/next/languages/zh-Hans.yml` ,将 `visitors` 汉化为热度就可以了：
 
-
-```
+```JavaScript
 post:
   created: 创建于
   modified: 更新于
@@ -1026,7 +1025,7 @@ post:
   totalcount: 博客全站字数
 ```
 
-### 添加 README.md 文件
+### 29. 添加 README.md 文件
 
 每个项目下一般都有一个 `README.md` 文件，但是使用 `hexo` 部署到仓库后，项目下是没有 README.md 文件的。
 
@@ -1036,11 +1035,11 @@ skip_render: README.md
 ```
 保存退出即可。再次使用 `hexo d` 命令部署博客的时候就不会在渲染 `README.md` 这个文件了。
 
-### 文章加密访问
+### 30. 文章加密访问
 
 打开 `themes/next/layout/_partials/head.swig`文件,在 `{% if theme.pace %}` 标签下的 `{% endif %}` 之前插入代码：
 
-```
+```JavaScript
   <script>
     (function(){
         if('{{ page.password }}'){
@@ -1066,7 +1065,7 @@ password: 123456
 ---
 ```
 
-### 添加jiathis分享
+### 31. 添加jiathis分享
 
 在主题配置文件中,做如下配置：
 ```
@@ -1080,10 +1079,10 @@ jiathis: true
 ```
 如果你想自定义话，打开 `themes/next/layout/_partials/share/jiathis.swig` 根据[官网](http://www.jiathis.com/)代码修改。
 
-### 修改打赏字体不闪动
+### 32. 修改打赏字体不闪动
 
 修改文件 `next/source/css/_common/components/post/post-reward.styl`，然后注释其中的函数 `wechat:hover` 和 `alipay:hover` ，如下：
-```
+```css
 * 注释文字闪动函数
  #wechat:hover p{
     animation: roll 0.1s infinite linear;
@@ -1098,10 +1097,10 @@ jiathis: true
 */
 ```
 
-### 自定义鼠标样式
+### 33. 自定义鼠标样式
 
 打开 `themes/next/source/css/_custom/custom.styl` ,在里面写下如下代码：
-```
+```css
 // 鼠标样式
   * {
       cursor: url("http://om8u46rmb.bkt.clouddn.com/sword2.ico"),auto!important
@@ -1112,10 +1111,10 @@ jiathis: true
 ```
 其中 url 里面必须是 ico 图片，ico 图片可以上传到网上（我是使用七牛云图床），然后获取外链，复制到 url 里就行了。
 
-### 网站标题栏背景颜色
+### 34. 网站标题栏背景颜色
 
 当使用Pisces主题时，网站标题栏背景颜色是黑色的，感觉不好看，可以在 `source/css/_schemes/Pisces/_brand.styl` 中修改：
-```
+```css
 .site-meta {
   padding: 20px 0;
   color: white;
@@ -1130,14 +1129,14 @@ jiathis: true
 }
 ```
 但是，我们一般不主张这样修改源码的，在 `next/source/css/_custom` 目录下面专门提供了 `custom.styl` 供我们自定义样式的，因此也可以在 `custom.styl` 里面添加：
-```
+```css
 // Custom styles.
 .site-meta {
   background: $blue; //修改为自己喜欢的颜色
 }
 ```
 
-### 修改内容区域的宽度
+### 35. 修改内容区域的宽度
 
 我们用Next主题是发现在电脑上阅读文章时内容两边留的空白较多，这样在浏览代码块时经常要滚动滚动条才能阅读完整，体验不是很好，下面提供修改内容区域的宽度的方法。
 NexT 对于内容的宽度的设定如下：
@@ -1164,10 +1163,10 @@ header{ width: 90%; }
 .content-wrap { width: calc(100% - 260px); }
 ```
 
-### 修改Logo字体
+### 36. 修改Logo字体
 
 在 `themes/next/source/css/_custom/custom.styl`  中添加如下代码：
-```
+```css
 @font-face {
     font-family: Zitiming;
     src: url('/fonts/Zitiming.ttf');
@@ -1179,10 +1178,10 @@ header{ width: 90%; }
 ```
 其中字体文件在 `themes/next/source/fonts` 目录下，里面有个 `.gitkeep` 的隐藏文件，打开写入你要保留的字体文件，比如我的是就是写入 `Zitiming.ttf` ，具体字库自己从网上下载即可。
 
-### 添加背景图
+### 37. 添加背景图
 
 在 themes/next/source/css/_custom/custom.styl 中添加如下代码：
-```
+```css
 body{
     background:url(/images/bg.jpg);
     background-size:cover;
@@ -1192,23 +1191,23 @@ body{
 }
 ```
 
-### 各版块透明度修改
+### 38. 各版块透明度修改
 
-#### 内容板块透明
+#### 38.1 内容板块透明
 
 博客根目录 `themes\next\source\css\_schemes\Pisces\_layout.styl` 文件 ` .content-wrap` 标签下 `background: white`修改为：
 ```
 background: rgba(255,255,255,0.7); //0.7是透明度
 ```
 
-#### 菜单栏背景
+#### 38.2 菜单栏背景
 
 博客根目录 `themes\next\source\css\_schemes\Pisces\_layout.styl` 文件 `.header-inner` 标签下 `background: white`修改为：
 ```
 background: rgba(255,255,255,0.7); //0.7是透明度
 ```
 
-#### 站点概况背景
+#### 38.3 站点概况背景
 
 博客根目录 `themes\next\source\css\_schemes\Pisces\_sidebar.styl` 文件 `.sidebar-inner` 标签下 `background: white`修改为：
 ```
@@ -1219,18 +1218,18 @@ background: rgba(255,255,255,0.7); //0.7是透明度
 background: rgba(255,255,255,0.7); //0.7是透明度
 ```
 
-#### 按钮背景
+#### 38.4 按钮背景
 
 博客根目录 `themes\next\source\css\_common\components\post\post-button.styl` 同上修改对应位置为 `background: transparent;`
 
-### 添加网易云音乐
+### 39. 添加网易云音乐
 
 在网易云音乐（网页版）中搜索我们想要插入的音乐，然后点击生成外链播放器
 ![](http://ov11eqxw3.bkt.clouddn.com/20171109wangyiyun.jpg/water.jpg)
 然后根据你得设置生成相应的html代码，将获得的html代码插入到你想要插入的位置。
 
 我放在了侧边栏，在 `themes/next/layout/_custom/sidebar.swig` 文件中增加生成的HTML代码：
-```
+```html
 <div id="music163player">
     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=38358214&auto=0&height=66">
     </iframe>
