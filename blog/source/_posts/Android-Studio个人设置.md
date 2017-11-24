@@ -13,9 +13,31 @@ showdonate: true
 
 > Android Studio 的个人设置只是在初次安装的时候会根据个人喜好配置，每当换电脑或者重搭开发环境时都要重新设置，因为设置项很多，所以配置起来很麻烦，而且网上找的资料不一定全，好在 Android Studio 为我们提供了非常方便的导入导出设置功能。不过有时候导入导出还是会有异常，比如这次我将 AS 2.3 的配置导入到 AS 3.0的时候就出现了很多毛病，所以写这篇日志方便自己以后手动配置。
 
+# 修改缓存文件位置
+
+修改 Android Studio 根目录下 `bin\idea.properties `
+（找到要修改的选项，去掉前面的#，也就是注释符号，然后修改后面的配置路径）。
+```java
+idea.config.path=D:\.AndroidStudio\config
+
+idea.system.path=D:\.AndroidStudio\system
+
+idea.plugins.path=D:\AndroidStudio\plugins
+
+idea.log.path=D:\.AndroidStudio\system\log
+```
+<!--more-->
+在gradle的安装目录，编辑 `bin\gradle` 文件，然后找到如下语句:
+```
+# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script
+```
+在这句话的下面加上如下这一句:
+```
+GRADLE_OPTS=-Dgradle.user.home=/yourpath/gradle/gradle_cache
+```
 
 # 常用设置
-<!--more-->
+
 ## 导入导出配置包
 我通常都是将我的配置包以时间命名放在云盘上。
 ![](http://ov11eqxw3.bkt.clouddn.com/0daoru.jpg/water.jpg)
