@@ -173,8 +173,8 @@ $(document).ready(function () {
       this.sidebarEl.removeClass('sidebar-active');
       this.sidebarEl.trigger('sidebar.isHiding');
 
-      //åœ¨ post é¡µé¢ä¸‹æŒ‰ä¸‹éšè— sidebar æ—¶å¦‚æœå½“å‰é€‰ä¸­çš„æ˜¯â€œç«™ç‚¹æ¦‚è§ˆâ€ï¼Œå°† toc å»é™¤ motion æ•ˆæœ
-      //é˜²æ­¢å†æ¬¡æ‰“å¼€æ—¶ä¼šå‡ºç°åœ¨â€œç«™ç‚¹æ¦‚è§ˆâ€ä¸‹çš„ bug
+      //ÔÚ post Ò³ÃæÏÂ°´ÏÂÒş²Ø sidebar Ê±Èç¹ûµ±Ç°Ñ¡ÖĞµÄÊÇ¡°Õ¾µã¸ÅÀÀ¡±£¬½« toc È¥³ı motion Ğ§¹û
+      //·ÀÖ¹ÔÙ´Î´ò¿ªÊ±»á³öÏÖÔÚ¡°Õ¾µã¸ÅÀÀ¡±ÏÂµÄ bug
       if (!!$('.post-toc-wrap')) {
         if ($('.site-overview-wrap').css('display') === 'block') {
           $('.post-toc-wrap').removeClass('motion-element');
