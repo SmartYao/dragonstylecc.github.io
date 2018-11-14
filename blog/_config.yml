@@ -82,5 +82,6 @@ deploy:
   type: git
   repo:
         coding: https://git.coding.net/dragonstyle/dragonstyle.git
-        github: https://github.com/dragonstylecc/dragonstylecc.github.io.git
+        #github: https://github.com/dragonstylecc/dragonstylecc.github.io.git
+        github: git@github.com:dragonstylecc/dragonstylecc.github.io.git
   branch: master
