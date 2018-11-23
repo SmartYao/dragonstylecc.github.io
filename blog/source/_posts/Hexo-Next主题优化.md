@@ -1083,7 +1083,7 @@ jiathis: true
 
 修改文件 `next/source/css/_common/components/post/post-reward.styl`，然后注释其中的函数 `wechat:hover` 和 `alipay:hover` ，如下：
 ```css
-* 注释文字闪动函数
+/* 注释文字闪动函数
  #wechat:hover p{
     animation: roll 0.1s infinite linear;
     -webkit-animation: roll 0.1s infinite linear;

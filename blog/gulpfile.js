@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var minifycss = require('gulp-minify-css');
+var cleancss = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
 var htmlclean = require('gulp-htmlclean');
@@ -8,6 +9,11 @@ var imagemin = require('gulp-imagemin');
 gulp.task('minify-css', function() {
   return gulp.src('./public/**/*.css')
   .pipe(minifycss())
+  .pipe(gulp.dest('./public'));
+});
+gulp.task('clean-css', function() {
+  return gulp.src('./public/**/*.css')
+  .pipe(cssmin())
   .pipe(gulp.dest('./public'));
 });
 // 压缩html文件
