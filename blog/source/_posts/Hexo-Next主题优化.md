@@ -1,7 +1,7 @@
 ---
 title: Hexo+Next主题优化
-showcopyright: true
-showdonate: true
+copyright:
+reward:
 date: 2017-11-07 15:00:38
 type:
 top:

@@ -6,8 +6,8 @@ top:
 comments:
 categories: [Android]
 tags: [Android, Android studio]
-showcopyright: true
-showdonate: true
+copyright: 
+reward:
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: Git常用简单命令
-showcopyright: true
-showdonate: true
+copyright:
+reward:
 date: 2017-11-07 15:23:54
 type:
 top:

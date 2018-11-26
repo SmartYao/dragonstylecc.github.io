@@ -1,7 +1,7 @@
 ---
 title: Git学习笔记
-showcopyright: true
-showdonate: true
+copyright:
+reward:
 date: 2017-11-07 15:42:48
 type:
 top:
@@ -233,6 +233,6 @@ $ git remote show origin
 $ git remote rename old new
 ```
 
-更多详细命令请参考 
+更多详细命令请参考
 https://git-scm.com/book/zh/v2
 http://www.yiibai.com/git/

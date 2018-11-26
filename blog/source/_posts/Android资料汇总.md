@@ -6,8 +6,8 @@ top:
 comments:
 categories: [工具资源, 资源, Android]
 tags: [Android, 资料]
-showcopyright: true
-showdonate: true
+copyright:
+reward:
 ---
 
 

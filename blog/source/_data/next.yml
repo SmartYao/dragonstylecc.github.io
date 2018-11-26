@@ -180,6 +180,11 @@ highlight_theme: night eighties
   # You can get your uid from https://livere.com/insight/myCode (General web site)
 livere_uid: MTAyMC8yODQwNy80OTc4
 
+#MobShare
+mob_share:
+  enable: true
+  appkey: 28f329c7acd00
+
 # NeedMoreShare2
 # Dependencies: https://github.com/theme-next/theme-next-needmoreshare2
 # See: https://github.com/revir/need-more-share2
@@ -191,22 +196,22 @@ livere_uid: MTAyMC8yODQwNy80OTc4
 #           Delicious,StumbleUpon,Pinterest,Facebook,GooglePlus,Slashdot,
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
-needmoreshare2:
-  enable: true
-  postbottom:
-    enable: true
-    options:
-      iconStyle: box
-      boxForm: horizontal
-      position: bottomCenter
-      networks: Weibo,Wechat,Douban,QQZone,Evernote,Mailto
-  float:
-    enable: true
-    options:
-      iconStyle: box
-      boxForm: horizontal
-      position: middleRight
-      networks: Weibo,Wechat,Douban,QQZone,Evernote,Mailto
+# needmoreshare2:
+  # enable: true
+  # postbottom:
+  #   enable: true
+  #   options:
+  #     iconStyle: box
+  #     boxForm: horizontal
+  #     position: bottomCenter
+  #     networks: Weibo,Wechat,Douban,QQZone,Evernote,Mailto
+  # float:
+  #   enable: true
+  #   options:
+  #     iconStyle: box
+  #     boxForm: horizontal
+  #     position: middleRight
+      # networks: Weibo,Wechat,Douban,QQZone,Evernote,Mailto
 
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
