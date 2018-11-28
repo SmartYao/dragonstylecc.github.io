@@ -1,6 +1,13 @@
 <!--MOB SHARE BEGIN-->
-<div class="-mob-share-ui-button -mob-share-open">分享</div>
-<div class="-mob-share-ui" style="display: none">
+<div class="-hoofoo-share-title"><i class="fa fa-share-alt-squre"aria-hidden="true"></i>&nbsp&nbsp分享到：</div>
+<div class="-hoofoo-share-buttons">
+    <div class="-mob-share-weibo -hoofoo-share-weibo -hoofoo-share-ui-button" align="center"><i class="fa fa-weibo" aria-hidden="true"></i></div>
+    <div class="-mob-share-weixin -hoofoo-share-weixin -hoofoo-share-ui-button" align="center"><i class="fa fa-weixin" aria-hidden="true"></i></div>
+    <div class="-mob-share-qq -hoofoo-share-qq -hoofoo-share-ui-button" align="center"><i class="fa fa-qq" aria-hidden="true"></i></div>
+    <div class="-mob-share-qzone -hoofoo-share-qzone -hoofoo-share-ui-button" align="center"></div>
+    <div class="-hoofoo-share-more -hoofoo-share-ui-button -mob-share-open" align="center"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+</div>
+<div class="-mob-share-ui -mob-share-ui-theme -mob-share-ui-theme-slide-bottom" style="display: none">
     <ul class="-mob-share-list">
         <li class="-mob-share-weibo"><p>新浪微博</p></li>
         <li class="-mob-share-weixin"><p>微信</p></li>

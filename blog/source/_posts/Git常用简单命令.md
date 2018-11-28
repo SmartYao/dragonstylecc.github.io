@@ -1,14 +1,18 @@
 ---
 title: Git常用简单命令
+categories:
+  - 技术
+  - Git
+tags:
+  - Git
+description: Git常用基本简单命令
+abbrlink: 4024874732
+date: 2017-11-07 15:23:54
 copyright:
 reward:
-date: 2017-11-07 15:23:54
 type:
 top:
 comments:
-categories: [技术, Git]
-tags: [Git]
-description: Git常用基本简单命令
 ---
 
 ```

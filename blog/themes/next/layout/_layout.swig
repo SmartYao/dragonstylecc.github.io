@@ -48,6 +48,13 @@
           <div id="content" class="content">
             {% block content %}{% endblock %}
           </div>
+
+          {% if theme.mob_share.enable and is_post() %}
+            <div>
+              {% include '_partials/share/mob_share.swig' %}
+            </div>
+          {% endif %}
+
           {% include '_partials/comments.swig' %}
         </div>
         {% if theme.sidebar.display !== 'remove' %}
@@ -80,7 +87,7 @@
         </span>
       </div>
     {% endif %}
-	
+
     {% if theme.baidushare and theme.baidushare.type === "slide" %}
       <div>
         {% include '_partials/share/baidushare.swig' %}

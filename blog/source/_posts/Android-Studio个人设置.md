@@ -1,12 +1,16 @@
 ---
 title: Android Studio个人设置
+categories:
+  - Android
+tags:
+  - Android
+  - Android studio
+abbrlink: 624209520
 date: 2017-09-06 17:21:59
 type:
 top:
 comments:
-categories: [Android]
-tags: [Android, Android studio]
-copyright: 
+copyright:
 reward:
 ---
 

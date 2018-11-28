@@ -303,7 +303,7 @@
           <!--noindex-->
           {% if theme.read_more_btn %}
             <div class="post-button text-center">
-              <a class="btn" href="{{ url_for(post.path) }}">
+              <a class="btn" href="{{ url_for(post.permalink) }}">
                 {{ __('post.read_more') }} &raquo;
               </a>
             </div>
@@ -314,7 +314,7 @@
           <!--noindex-->
           {% if theme.read_more_btn %}
             <div class="post-button text-center">
-              <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
+              <a class="btn" href="{{ url_for(post.permalink) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
                 {{ __('post.read_more') }} &raquo;
               </a>
             </div>
@@ -327,7 +327,7 @@
           <!--noindex-->
           {% if theme.read_more_btn %}
             <div class="post-button text-center">
-              <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
+              <a class="btn" href="{{ url_for(post.permalink) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
                 {{ __('post.read_more') }} &raquo;
               </a>
             </div>
@@ -359,6 +359,14 @@
       </div>
     {% endif %}
 
+    {% if theme.creative_commons.license and theme.creative_commons.post and not is_index %}
+      {% if not (page.copyright === "false" ) %}
+        <div>
+          {% include '../_partials/post-copyright.swig' with { post: post } %}
+        </div>
+      {% endif %}
+    {% endif %}
+
     {% if page.reward === undefined and theme.reward.enable %}
       {% set reward_able = true %}
     {% else %}
@@ -368,14 +376,6 @@
       <div>
         {% include 'reward.swig' %}
       </div>
-    {% endif %}
-
-    {% if theme.creative_commons.license and theme.creative_commons.post and not is_index %}
-      {% if not (page.copyright === "false" ) %}
-        <div>
-          {% include '../_partials/post-copyright.swig' with { post: post } %}
-        </div>
-      {% endif %}
     {% endif %}
 
     <footer class="post-footer">

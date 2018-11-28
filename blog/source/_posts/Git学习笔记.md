@@ -1,13 +1,18 @@
 ---
 title: Git学习笔记
+categories:
+  - 技术
+  - Git
+tags:
+  - Git
+  - Git学习
+abbrlink: 2837359218
+date: 2017-11-07 15:42:48
 copyright:
 reward:
-date: 2017-11-07 15:42:48
 type:
 top:
 comments:
-categories: [技术, Git]
-tags: [Git, Git学习]
 ---
 
 ### 学习Git需要清楚的几个术语

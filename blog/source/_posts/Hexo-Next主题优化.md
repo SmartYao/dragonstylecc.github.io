@@ -1,13 +1,19 @@
 ---
 title: Hexo+Next主题优化
+categories:
+  - 技术
+  - 个人博客
+tags:
+  - Hexo
+  - Next主题
+  - Hexo+Next
+abbrlink: 3358042383
+date: 2017-11-07 15:00:38
 copyright:
 reward:
-date: 2017-11-07 15:00:38
 type:
 top:
 comments:
-categories: [技术, 个人博客]
-tags: [Hexo, Next主题, Hexo+Next]
 ---
 
 
