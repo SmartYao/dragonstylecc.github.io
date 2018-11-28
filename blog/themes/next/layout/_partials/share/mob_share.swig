@@ -1,5 +1,5 @@
 <!--MOB SHARE BEGIN-->
-<div class="-hoofoo-share-title"><i class="fa fa-share-alt-squre"aria-hidden="true"></i>&nbsp&nbsp分享到：</div>
+<div class="-hoofoo-share-title"><i class="fa fa-share-alt-square"aria-hidden="true"></i>&nbsp&nbsp分享到：</div>
 <div class="-hoofoo-share-buttons">
     <div class="-mob-share-weibo -hoofoo-share-weibo -hoofoo-share-ui-button" align="center"><i class="fa fa-weibo" aria-hidden="true"></i></div>
     <div class="-mob-share-weixin -hoofoo-share-weixin -hoofoo-share-ui-button" align="center"><i class="fa fa-weixin" aria-hidden="true"></i></div>

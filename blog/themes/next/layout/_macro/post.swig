@@ -303,7 +303,7 @@
           <!--noindex-->
           {% if theme.read_more_btn %}
             <div class="post-button text-center">
-              <a class="btn" href="{{ url_for(post.permalink) }}">
+              <a class="btn" href="{{ url_for(post.path) }}">
                 {{ __('post.read_more') }} &raquo;
               </a>
             </div>
@@ -314,7 +314,7 @@
           <!--noindex-->
           {% if theme.read_more_btn %}
             <div class="post-button text-center">
-              <a class="btn" href="{{ url_for(post.permalink) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
+              <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
                 {{ __('post.read_more') }} &raquo;
               </a>
             </div>
@@ -327,7 +327,7 @@
           <!--noindex-->
           {% if theme.read_more_btn %}
             <div class="post-button text-center">
-              <a class="btn" href="{{ url_for(post.permalink) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
+              <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
                 {{ __('post.read_more') }} &raquo;
               </a>
             </div>
