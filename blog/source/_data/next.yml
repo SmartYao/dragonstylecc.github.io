@@ -178,40 +178,12 @@ highlight_theme: night eighties
 
   # Support for LiveRe comments system.
   # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTAyMC8yODQwNy80OTc4
+# livere_uid: MTAyMC8yODQwNy80OTc4
 
 #MobShare
 mob_share:
   enable: true
   appkey: 28f329c7acd00
-
-# NeedMoreShare2
-# Dependencies: https://github.com/theme-next/theme-next-needmoreshare2
-# See: https://github.com/revir/need-more-share2
-# Also see: https://github.com/DzmVasileusky/needShareButton
-# iconStyle: default | box
-# boxForm: horizontal | vertical
-# position: top / middle / bottom + Left / Center / Right
-# networks: Weibo,Wechat,Douban,QQZone,Twitter,Linkedin,Mailto,Reddit,
-#           Delicious,StumbleUpon,Pinterest,Facebook,GooglePlus,Slashdot,
-#           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
-#           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
-# needmoreshare2:
-  # enable: true
-  # postbottom:
-  #   enable: true
-  #   options:
-  #     iconStyle: box
-  #     boxForm: horizontal
-  #     position: bottomCenter
-  #     networks: Weibo,Wechat,Douban,QQZone,Evernote,Mailto
-  # float:
-  #   enable: true
-  #   options:
-  #     iconStyle: box
-  #     boxForm: horizontal
-  #     position: middleRight
-      # networks: Weibo,Wechat,Douban,QQZone,Evernote,Mailto
 
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
@@ -253,3 +225,28 @@ local_search:
   top_n_per_article: 1
   # unescape html strings to the readable one
   unescape: false
+
+  # Star rating support to each article.
+  # To get your ID visit https://widgetpack.com
+  rating:
+    enable: true
+    id:     15245
+    color:  fc6423
+
+  # Fancybox. There is support for old version 2 and new version 3.
+  # Please, choose only any one variant, do not need to install both.
+  # For install 2.x: https://github.com/theme-next/theme-next-fancybox
+  # For install 3.x: https://github.com/theme-next/theme-next-fancybox3
+  fancybox: true
+
+  # Added switch option for separated repo in 6.0.0.
+  # Dependencies: https://github.com/theme-next/theme-next-fastclick
+  fastclick: true
+
+  # Added switch option for separated repo in 6.0.0.
+  # Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
+  lazyload: true
+
+  # Progress bar in the top during page loading.
+  # Dependencies: https://github.com/theme-next/theme-next-pace
+  pace: true

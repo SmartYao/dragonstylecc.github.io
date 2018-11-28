@@ -126,5 +126,6 @@
   {% include '_third-party/bookmark.swig' %}
   {% include '_third-party/copy-code.swig' %}
   {% include '_third-party/pdf.swig' %}
+  {% include '_scripts/mob_share.swig' %}
 </body>
 </html>
