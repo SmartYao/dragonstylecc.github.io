@@ -4,7 +4,6 @@
     <div class="-mob-share-weibo -hoofoo-share-weibo -hoofoo-share-ui-button" align="center"><i class="fa fa-weibo" aria-hidden="true"></i></div>
     <div class="-mob-share-weixin -hoofoo-share-weixin -hoofoo-share-ui-button" align="center"><i class="fa fa-weixin" aria-hidden="true"></i></div>
     <div class="-mob-share-qq -hoofoo-share-qq -hoofoo-share-ui-button" align="center"><i class="fa fa-qq" aria-hidden="true"></i></div>
-    <div class="-mob-share-qzone -hoofoo-share-qzone -hoofoo-share-ui-button" align="center"></div>
     <div class="-hoofoo-share-more -hoofoo-share-ui-button -mob-share-open" align="center"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
 </div>
 <div class="-mob-share-ui -mob-share-ui-theme -mob-share-ui-theme-slide-bottom" style="display: none">
