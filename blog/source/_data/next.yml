@@ -180,21 +180,21 @@ highlight_theme: night eighties
   # You can get your uid from https://livere.com/insight/myCode (General web site)
 # livere_uid: MTAyMC8yODQwNy80OTc4
 
-# Gitment
-# Introduction: https://imsun.net/posts/gitment-introduction
-gitment:
-  enable: true
-  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
-  count: true # Show comments count in post meta area
-  lazy: false # Comments lazy loading with a button
-  cleanly: false # Hide 'Powered by ...' on footer, and more
-  language: zh_CN
-  github_user: dragonstyleblog
-  github_repo: blog-comments
-  client_id: 7de9d71723f1d5716be6
-  client_secret: 5f6d55859345ed2f1611eee2eada0f1c44c5c5ce
-  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
-  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
+# Valine.
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://valine.js.org
+valine:
+  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
+  appid: 9DBdjgPvO43bz1cm2SFtwkmb-gzGzoHsz
+  appkey: 61xlhYVTGCh7L7KkeYpRcz69
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  placeholder: 有话要说？ # comment box placeholder
+  avatar: mm # gravatar style
+  guest_info: nick,mail,link # custom comment header
+  pageSize: 10 # pagination size
+  visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+
 
 #MobShare
 mob_share:
