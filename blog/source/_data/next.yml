@@ -188,7 +188,7 @@ gitment:
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
-  language: # Force language, or auto switch by theme
+  language: zh_CN
   github_user: dragonstyleblog
   github_repo: blog-comments
   client_id: 7de9d71723f1d5716be6
@@ -245,7 +245,7 @@ local_search:
   # Star rating support to each article.
   # To get your ID visit https://widgetpack.com
   rating:
-    enable: true
+    enable: false
     id:     15245
     color:  fc6423
 
