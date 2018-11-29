@@ -193,7 +193,7 @@ valine:
   avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
-  visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+  visitor: true # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
 
 
 #MobShare
@@ -245,7 +245,7 @@ local_search:
   # Star rating support to each article.
   # To get your ID visit https://widgetpack.com
   rating:
-    enable: false
+    enable: true
     id:     15245
     color:  fc6423
 
