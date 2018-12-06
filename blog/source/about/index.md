@@ -4,7 +4,7 @@ date: 2017-08-17 16:43:59
 type: "about"
 comments: false
 ---
-![](http://ov11eqxw3.bkt.clouddn.com/aboutme.jpg/none.jpg)
+![](https://blogimages-1252898154.cos.ap-chongqing.myqcloud.com/blogold/aboutme.jpg)
 # 关于本站
 &nbsp;
 **工具资源：** 一些便捷、高效、有趣、有用的各种工具资源
@@ -31,4 +31,4 @@ comments: false
 
 如果我拥有什么巨大财富，我希望是我的脑袋。芸芸众生我更愿意看到不一样的烟火，是你吗？
 
-E-mail:<a href="mailto:dragonstyle@aliyun.com">dragonstyle@aliyun.com</a> 
+E-mail:<a href="mailto:dragonstyle@aliyun.com">dragonstyle@aliyun.com</a>
